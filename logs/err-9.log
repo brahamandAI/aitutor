@@ -1,0 +1,28 @@
+2025-10-26T16:43:24: node:internal/modules/cjs/loader:1210
+2025-10-26T16:43:24:   throw err;
+2025-10-26T16:43:24:   ^
+2025-10-26T16:43:24: 
+2025-10-26T16:43:24: Error: Cannot find module '/home/tutorbuddy/htdocs/tutorbuddy.co/aitutor/.next/standalone/server.js'
+2025-10-26T16:43:24:     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-10-26T16:43:24:     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-10-26T16:43:24:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+2025-10-26T16:43:24:     at node:internal/main/run_main_module:28:49 {
+2025-10-26T16:43:24:   code: 'MODULE_NOT_FOUND',
+2025-10-26T16:43:24:   requireStack: []
+2025-10-26T16:43:24: }
+2025-10-26T16:43:24: 
+2025-10-26T16:43:24: Node.js v20.19.5
+2025-10-26T16:43:49: node:internal/modules/cjs/loader:1210
+2025-10-26T16:43:49:   throw err;
+2025-10-26T16:43:49:   ^
+2025-10-26T16:43:49: 
+2025-10-26T16:43:49: Error: Cannot find module '/home/tutorbuddy/htdocs/tutorbuddy.co/aitutor/.next/standalone/server.js'
+2025-10-26T16:43:49:     at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+2025-10-26T16:43:49:     at Module._load (node:internal/modules/cjs/loader:1038:27)
+2025-10-26T16:43:49:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+2025-10-26T16:43:49:     at node:internal/main/run_main_module:28:49 {
+2025-10-26T16:43:49:   code: 'MODULE_NOT_FOUND',
+2025-10-26T16:43:49:   requireStack: []
+2025-10-26T16:43:49: }
+2025-10-26T16:43:49: 
+2025-10-26T16:43:49: Node.js v20.19.5

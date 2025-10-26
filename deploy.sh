@@ -68,8 +68,9 @@ else
     echo "✅ PM2 installed: $(pm2 --version)"
 fi
 
-echo "🔄 Restarting application with PM2..."
-pm2 restart ecosystem.config.js
+echo "🔄 Deleting existing process and starting fresh with PM2..."
+pm2 delete tutorbuddy.co 2>/dev/null || echo "No existing process to delete"
+pm2 start ecosystem.config.js
 
 echo "📊 PM2 Status:"
 pm2 status

@@ -6,11 +6,10 @@ module.exports = {
       args: '.next/standalone/server.js',
       cwd: '/home/tutorbuddy/htdocs/tutorbuddy.co/aitutor',
       instances: 1,
-      autorestart: true,
+      autorestart: false,
       watch: false,
       max_memory_restart: '1G',
-      max_restarts: 0,
-      min_uptime: '10s',
+      stop_exit_codes: '0',
       env: {
         NODE_ENV: 'production',
         PORT: 3005
