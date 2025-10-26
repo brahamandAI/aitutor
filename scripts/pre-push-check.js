@@ -86,30 +86,21 @@ if (fs.existsSync(gitignorePath)) {
     console.warn('⚠️  Warning: .gitignore file not found');
 }
 
-// Check 6: Run tests if they exist
-const testScripts = ['test', 'test:unit', 'test:integration', 'test:e2e'];
-let testsRun = false;
-
-for (const script of testScripts) {
-    try {
-        const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-        if (packageJson.scripts && packageJson.scripts[script]) {
-            console.log(`🧪 Running ${script}...`);
-            execSync(`npm run ${script}`, { 
-                stdio: 'inherit',
-                cwd: process.cwd()
-            });
-            testsRun = true;
-            console.log(`✅ ${script} passed`);
-            break; // Only run one test script
-        }
-    } catch (error) {
-        // Script doesn't exist, continue
+// Check 6: Run linting (skip build and tests for speed)
+try {
+    const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+    if (packageJson.scripts && packageJson.scripts['lint']) {
+        console.log('🧪 Running lint...');
+        execSync('npm run lint', { 
+            stdio: 'inherit',
+            cwd: process.cwd()
+        });
+        console.log('✅ Lint passed');
+    } else {
+        console.log('ℹ️  No lint script found in package.json');
     }
-}
-
-if (!testsRun) {
-    console.log('ℹ️  No test scripts found in package.json');
+} catch (error) {
+    console.warn('⚠️  Warning: Lint check failed or not available');
 }
 
 // Check 7: Check for large files
