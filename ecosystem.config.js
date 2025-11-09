@@ -2,9 +2,9 @@ module.exports = {
   apps: [
     {
       name: 'tutorbuddy.co',
-      script: 'node',
-      args: '.next/standalone/server.js',
-      cwd: '/home/tutorbuddy/htdocs/tutorbuddy.co/aitutor',
+      script: '.next/standalone/server.js',
+      cwd: '/home/tutorbuddy/htdocs/tutorbuddy.co/tutorbuddy.co',
+      interpreter: 'node',
       instances: 1,
       autorestart: false,
       watch: false,
