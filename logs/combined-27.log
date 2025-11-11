@@ -1,0 +1,5 @@
+2025-11-11T12:08:50: - [36minfo[39m Loaded env from /home/ubuntu/htdocs/tutorbuddy/.next/standalone/.env
+2025-11-11T12:08:50: Listening on port 3004 url: http://localhost:3004
+2025-11-11T12:09:26: - [36minfo[39m Loaded env from /home/ubuntu/htdocs/tutorbuddy/.next/standalone/.env
+2025-11-11T12:09:27: Error: 'sharp' is required to be installed in standalone mode for the image optimization to function correctly. Read more at: https://nextjs.org/docs/messages/sharp-missing-in-production
+2025-11-11T12:09:28: - [36minfo[39m Loaded env from /home/ubuntu/htdocs/tutorbuddy/.next/standalone/.env

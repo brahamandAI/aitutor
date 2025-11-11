@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'tutorbuddy.co',
       script: '.next/standalone/server.js',
-      cwd: '/home/tutorbuddy/htdocs/tutorbuddy.co/tutorbuddy.co',
+      cwd: '.',
       interpreter: 'node',
       instances: 1,
       autorestart: false,
@@ -12,11 +12,11 @@ module.exports = {
       stop_exit_codes: '0',
       env: {
         NODE_ENV: 'production',
-        PORT: 3005
+        PORT: 3004
       },
       env_production: {
         NODE_ENV: 'production',
-        PORT: 3005
+        PORT: 3004
       },
       error_file: './logs/err.log',
       out_file: './logs/out.log',
