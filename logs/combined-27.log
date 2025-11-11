@@ -3,3 +3,14 @@
 2025-11-11T12:09:26: - [36minfo[39m Loaded env from /home/ubuntu/htdocs/tutorbuddy/.next/standalone/.env
 2025-11-11T12:09:27: Error: 'sharp' is required to be installed in standalone mode for the image optimization to function correctly. Read more at: https://nextjs.org/docs/messages/sharp-missing-in-production
 2025-11-11T12:09:28: - [36minfo[39m Loaded env from /home/ubuntu/htdocs/tutorbuddy/.next/standalone/.env
+Error: Cannot find module '/home/ubuntu/htdocs/tutorbuddy/.next/standalone/server.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at /usr/local/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/local/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+    at next (/usr/local/lib/node_modules/pm2/node_modules/async/waterfall.js:96:20)
+    at /usr/local/lib/node_modules/pm2/node_modules/async/internal/onlyOnce.js:12:16
+    at WriteStream.<anonymous> (/usr/local/lib/node_modules/pm2/lib/Utility.js:186:13)
+    at WriteStream.emit (node:events:524:28)
+    at node:internal/fs/streams:78:16
+    at FSReqCallback.oncomplete (node:fs:188:23)
