@@ -3,6 +3,8 @@
 /.pnp
 .pnp.js
 
+logs/
+
 backup2/
 
 # Next.js
